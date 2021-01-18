@@ -7,3 +7,6 @@ pygame_mazesolver_DFS.py
 3. Pygame visual game with two modes: place vs. demo
 Demo mode visualizes the DFS working process for education purpose.
 pygame_mazesolver_DFS_demoplaymodes.py
+
+4. Pygame for Sudoku Solver
+Pygame_SudokuSolver_DFS.py
