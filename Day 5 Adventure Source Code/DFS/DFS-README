@@ -1,0 +1,9 @@
+1. DFS algorithm in text based maze game
+mazesolver_DFS.py
+
+2. Pygame visual game 
+pygame_mazesolver_DFS.py
+
+3. Pygame visual game with two modes: place vs. demo
+Demo mode visualizes the DFS working process for education purpose.
+pygame_mazesolver_DFS_demoplaymodes.py
