@@ -16,6 +16,7 @@ FPS = 30
 # define colors
 BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
+BLUE = (201, 223, 220)
 
 # set font size
 large_text_size = 20
@@ -46,11 +47,11 @@ num_cols = 5
 
 # two barrier values 'wall'(default) and 'grass'
 barrier = 'wall'
-legendX, legendY = 195, 670
-legend_gap = 155
+legendX, legendY = 180, 470
+legend_gap = 195
 legend_width, legent_height = 50, 50
-solveX, solveY = 200, 650
-resetX, resetY = 400, 650
+solveX, solveY = 200, 450
+resetX, resetY = 400, 450
 
 # fix start index: first row, 12th column
 #startX = 11
@@ -108,8 +109,8 @@ mouse_y = 0;
 ###### demo mode setup  ############
 # default to play model
 demo_mode = False
-demoX, demoY = 720, 100
-playX, playY = 840, 100
+demoX, demoY = 520, 100
+playX, playY = 640, 100
 queueX, queueY = 640, 300
 medium_text_size = 15
 small_text_size = 10
@@ -401,22 +402,22 @@ def solve_maze():
                     if neighbour == "L":
                         has_left = True
                         rect_left = pygame.Rect(x+w*j+11, y+w*i+11, w-17, w-17)
-                        pygame.draw.rect(screen, (137,207,240), rect_left)
+                        pygame.draw.rect(screen, BLUE, rect_left)
                         
                     elif neighbour == "R":
                         has_right = True
                         rect_right = pygame.Rect(x+w*j+11, y+w*i+11, w-17, w-17)
-                        pygame.draw.rect(screen, (137,207,240), rect_right)
+                        pygame.draw.rect(screen, BLUE, rect_right)
 
                     elif neighbour == "U":
                         has_up = True
                         rect_up = pygame.Rect(x+w*j+11, y+w*i+11, w-17, w-17)
-                        pygame.draw.rect(screen, (137,207,240), rect_up)
+                        pygame.draw.rect(screen, BLUE, rect_up)
                             
                     elif neighbour == "D":
                         has_down = True
                         rect_down = pygame.Rect(x+w*j+11, y+w*i+11, w-17, w-17)
-                        pygame.draw.rect(screen, (137,207,240), rect_down)
+                        pygame.draw.rect(screen, BLUE, rect_down)
 
 
                     step_num = step_num + 1
@@ -443,14 +444,14 @@ def solve_maze():
                 pygame.draw.rect(screen, LIGHTGREY, exploring_rect)
 
             if has_left:
-                pygame.draw.rect(screen, (137,207,240), rect_left)
+                pygame.draw.rect(screen, BLUE, rect_left)
 
             if has_right:
-                pygame.draw.rect(screen, (137,207,240), rect_right)
+                pygame.draw.rect(screen, BLUE, rect_right)
             if has_up:
-                pygame.draw.rect(screen, (137,207,240), rect_up)
+                pygame.draw.rect(screen, BLUE, rect_up)
             if has_down:
-                pygame.draw.rect(screen, (137,207,240), rect_down)
+                pygame.draw.rect(screen, BLUE, rect_down)
 
             has_left = False
             has_right = False
