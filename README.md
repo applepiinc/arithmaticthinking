@@ -1,1 +1,1 @@
-This repository contains some sample content from the book to be published on Amazon in Feb/March, 2021. It is working-in-progress. We invite you to read Prologue first. It provides you the context, the characters design, the algorithms covered and the flow. Welcome to our adventure!
+This repository contains some sample content from the book to be published on Amazon in Feb/March, 2021. We invite you to review Cover-Design.pdf and Manuscript-Page1-60.pdf. It provides you the context, the characters design, the algorithms covered and the flow. Welcome to the adventure!
